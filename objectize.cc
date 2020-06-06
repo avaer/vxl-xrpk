@@ -96,4 +96,8 @@ EMSCRIPTEN_KEEPALIVE void cllideBoxEther(int dims[3], float *potential, int shif
   result[2] = (unsigned int)ceiled;
 }
 
+EMSCRIPTEN_KEEPALIVE void doFree(void *ptr) {
+  free(ptr);
+}
+
 }
